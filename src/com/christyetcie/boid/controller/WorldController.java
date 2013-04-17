@@ -6,7 +6,7 @@ import com.christyetcie.boid.R;
 import com.christyetcie.boid.controller.strategy.BoidMovementDispertion;
 import com.christyetcie.boid.model.Boid;
 import com.christyetcie.boid.model.World;
-import com.christyetcie.boids.util.Vector3;
+import com.christyetcie.boid.util.Vector3;
 
 public class WorldController {
 

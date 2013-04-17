@@ -1,6 +1,6 @@
 package com.christyetcie.boid.model;
 
-import com.christyetcie.boids.util.Vector3;
+import com.christyetcie.boid.util.Vector3;
 
 public class Boid {
 

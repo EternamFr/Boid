@@ -1,4 +1,4 @@
-package com.christyetcie.boids.util;
+package com.christyetcie.boid.util;
 
 public class Vector3 {
 
