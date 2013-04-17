@@ -16,6 +16,7 @@ public class WorldController {
 	public WorldController(World world) {
 		mWorld = world;
 		mBoidController = new BoidController();
+		
 		mBoidController.setBoidMovementStrategy(new BoidMovementDispertion());
 		
 		initializePopulation();
