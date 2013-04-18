@@ -91,11 +91,12 @@ public class MainActivity extends Activity implements Renderer {
         }
         
         if(state == GLGameState.Running) {
-            float deltaTime = (System.nanoTime()-startTime) / 1000000000.0f;
+            float deltaTime = (System.nanoTime() - startTime) / 1000000000.0f;
             startTime = System.nanoTime();
             
+            mGameEngine.preUpdate(deltaTime);
             mGameEngine.update(deltaTime);
-            mGameEngine.render(deltaTime,gl);
+            mGameEngine.render(deltaTime, gl);
         }
         
         if(state == GLGameState.Paused) {

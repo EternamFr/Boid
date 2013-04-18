@@ -4,11 +4,12 @@ import com.christyetcie.boid.util.Vector3;
 
 public class Boid {
 
-	public final static float MAX_SPEED = 25.0f;
+	public final static float MAX_SPEED = 30.0f;
 	private int mTextureRessourceId;
 
 	public Vector3 mPosition;
 	public Vector3 mSpeed;
+	public Vector3 mUpdatedSpeed;
 	
 	private int mId;
 	
@@ -45,4 +46,5 @@ public class Boid {
 	public int getId() {
 		return mId;
 	}
+	
 }

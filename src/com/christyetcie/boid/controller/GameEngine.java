@@ -18,6 +18,11 @@ public class GameEngine {
 		mWorldRenderer = new WorldRenderer(mWorld, this);
 		mWorldController = new WorldController(mWorld);
 	}
+
+	/** pre-update the world with the deltaTime in seconds **/
+	public void preUpdate(float deltaTime) {
+		mWorldController.preUpdate(deltaTime);
+	}
 	
 	/** update the world with the deltaTime in seconds **/
 	public void update(float deltaTime) {

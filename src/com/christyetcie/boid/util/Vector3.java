@@ -134,4 +134,15 @@ public class Vector3 {
 		return (float)Math.sqrt(x * x + y * y + z * z);
 	}
 	
+	public static float distanceSquare(Vector3 u, Vector3 v) {
+		float x = u.mX - v.mX;
+		float y = u.mY - v.mY;
+		float z = u.mZ - v.mZ;
+		return x * x + y * y + z * z;
+	}
+	
+	public static Vector3 distanceXYZ(Vector3 u, Vector3 v) {
+		return new Vector3(Math.abs(u.mX - v.mX), Math.abs(u.mY - v.mY), Math.abs(u.mZ - v.mZ));
+	}
+	
 }
